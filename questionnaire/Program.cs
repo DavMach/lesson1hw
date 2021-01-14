@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,22 +6,16 @@ using System.Threading.Tasks;
 
 
 // Урок 1. Введение. Базовые типы данных. Консоль. Классы и методы.
-// Выполнил Мачитидзе Давид
-
+// Мачитидзе Давид
+// Написать программу «Анкета». Последовательно задаются вопросы (имя, фамилия, возраст, рост, вес). В результате вся информация выводится в одну строчку.
 
 
 namespace questionnaire
 {
-    /// <summary>
-    /// Написать программу «Анкета». Последовательно задаются вопросы (имя, фамилия, возраст, рост, вес). В результате вся информация выводится в одну строчку.
-    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            int a;
-            int b;
-            int c;
             int d;
             int e;
 
@@ -37,6 +31,9 @@ namespace questionnaire
             string inputD = Console.ReadLine();
             Console.Write("Вес: ");
             string inputE = Console.ReadLine();
+
+            d = Convert.ToInt32(inputD);
+            e = Convert.ToInt32(inputE);
 
             #region Task1
             // а) используя склеивание;
